@@ -59,7 +59,7 @@ class MangaReader(BoxLayout):
             if chapters_response.status_code == 200:
                 chapters_data = chapters_response.json().get('data', [])
                 
-                # Popup content
+                # Popup content .
                 content = BoxLayout(orientation='vertical', size_hint=(1, 0.9))
                 scroll = ScrollView(size_hint=(1, 0.8))
                 chapter_list = BoxLayout(orientation='vertical', size_hint_y=None)
